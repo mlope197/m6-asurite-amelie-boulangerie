@@ -22,9 +22,12 @@ header, footer{
 header{
 
     height: 150px; 
-    background-image: url('bowl.jpg');
+    background-image: url("images/bowl.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
     background-color: #141a1a;
     color: #ffffff;
+
 
 }
 
@@ -38,8 +41,9 @@ h1{
 }
 
 #grid-container{
+
     width: 1000px;
-    margin-top: 20px;
+    margin-top:  0;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -47,24 +51,73 @@ h1{
     display: grid;
     grid-template-columns: 184px 1fr;
     gap: 0 16px;
+
 }
 
 nav{
+
     width: 150px;
     margin-top: 16px;
 }
+
 /* ---------------------------------- */
 nav li{
     text-decoration: none;
     margin: 0 auto;
+    list-style-type: none;
 }
 /* ------------------------------------ */
 nav a{
+    
     display: block;
     padding: 16px;
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: auto;
-    
+    margin-right: auto;
+    background-color: #e0e5de;
+    color: #141a1a;
+    text-decoration: none;
+    font-weight: bold;
+
 }
 
+a:hover{
+    background-color:#f28095;
+}
+
+main{
+    color: #542c1B;
+    padding-bottom: 16px;
+}
+
+main img{
+    float: left;
+}
+
+main p, main ul{
+    display: inline-block;
+    width: 50%;
+}
+
+main p{
+    margin-left: 32px;
+}
+
+main ul{
+    margin-left: 16px;
+}
+
+address{
+    clear: both;
+}
+
+footer{
+    font-style: italic;
+    margin: 0, auto;
+    background-color: #afaeb4;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0;
+    padding-right: 0;
+}
